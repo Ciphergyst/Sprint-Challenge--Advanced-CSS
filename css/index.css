@@ -211,11 +211,11 @@ footer {
 
 
 @media (max-width: 500px) {
-  .home .space-images .sky .launch {
+  .home .space-images img .sky .launch {
     display: none;
   }
   .home .space-images .blast {
-    width: 90%;
+    width: 95%;
   }
 }
 @media ( max-width: 500px) {
@@ -231,7 +231,10 @@ footer {
   padding: 5px 5px 5px 5px;
   margin-left:0px;
   text-align: left;
-
+  }
+ .home .space-images .sky .launch {
+   display: none;
+ }
 }
 .home .intro p {
   padding: 0 5px;
@@ -267,10 +270,16 @@ footer {
 }
 
 @media(max-width: 500px) {
-  .home .walk {
+  .home .walk  {
     display: flex;
     flex-flow: column-reverse;
     width: 100%;
+    align-items: center;
+  }
+   .home .walk .walk-text {
+     display: flex;
+     flex-flow: column;
+   }
   }
 }
 
@@ -291,6 +300,14 @@ footer {
 @media (max-width:500px) {
   .home .walk .walk-img {
     width:100%;
+  }
+  .home .walk  h3 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    flex-flow: nowrap;
+    justify-content: center;
+    align-items: center;
   }
 }
 .home .walk .walk-img img {
