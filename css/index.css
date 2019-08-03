@@ -168,13 +168,23 @@ header {
   margin-top: 14px;
   margin-bottom: 14px;
 }
+header .Menu {
+  display:flex;
+  flex-direction: row;
+  font-size: 18px;
+  justify-content: space-between;
+}
+
 @media (max-width:500px) {
-  header {
-    width: 75%
+  .intro .main-header {
+    width: auto;
 }
 
 header h1 {
-  font-size: 32px;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+  font-size: 50px;
   margin-top: 15px;
   margin-bottom: 15px;
   text-align: center;
@@ -184,6 +194,9 @@ header h1 {
 
 h1 {
   font-size: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 footer {
   color: #22283B;
@@ -206,12 +219,15 @@ footer {
   }
 }
 @media ( max-width: 500px) {
-  .home .intro .header-img {
-    width:90%;
-    border-radius: 20px;
+  /* .home .intro .header-img {
+    width:80%;
+    border-radius: 20px; */
   }
-}
-.home .intro h2 {
+  .home .intro img {
+    width:100%;
+  }
+
+ .home .intro h2 {
   padding: 5px 5px 5px 5px;
   margin-left:0px;
   text-align: left;
