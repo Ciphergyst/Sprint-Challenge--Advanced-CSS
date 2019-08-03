@@ -11,14 +11,18 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-
+    @media(max-width: 500px){
+      .sky, .Launch{
+        display:none;
+      }
+    }
     img {
       width: 28%;
       margin: 20px 2.5%;
@@ -26,6 +30,8 @@
       height: 100%;
     }
   }
+
+
 
   .visit-planets {
     padding: 15px;
@@ -58,13 +64,19 @@
       }
 
       .btn {
+       .button(@width, @fontsize, @color, @bgcolor);
+       .btn-border(@radius, @border);
+         &:hover {
+          background-color: blue;
+        }
+
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
       img {
         width: 100%;
         height: auto;
