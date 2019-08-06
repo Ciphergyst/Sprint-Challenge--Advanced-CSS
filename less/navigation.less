@@ -9,22 +9,38 @@ header {
  margin-top: 14px;
  margin-bottom: 14px;
 
+ h1 {
+   font-size: 4rem;
+   margin-bottom: 0.8rem;
+   padding-bottom: 3%;
+ }
 
+  nav {
+   display: flex;
+   justify-content: center;
+   flex-direction: row;
+  
 
-h1 {
-  @media (max-width: 500px)
-  font-size: 50px;
+   .Menu {
+     display: flex;
 
-nav {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+      a {
+       padding: 0 20px;
+       text-decoration: none;
+       font-size: 10px;
+       color: black;
 
-  .Menu {
-    display: flex;
+        @media @phone {
+         .Menu a {
+           flex-flow: nowrap;
+           padding: 0.5em;
+           color: black;
+           font-size: 5rem;
+          }
+        }
+      }
+    }
+
   }
-  a {
-    padding: 0 20px;
-    text-decoration: none;
-  }
+
 }
