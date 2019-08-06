@@ -24,3 +24,9 @@
 @border-real: #dee2e6;
 
 // Mobile var
+@desktop-min-width:  1024px;
+@phone-max-width:    768px;
+
+@desktop:            ~"only screen and (min-width: @{desktop-min-width})";
+@tablet:             ~"only screen and (min-width: @{phone-max-width}) and (max-width: @{desktop-min-width}";
+@phone:              ~"only screen and (max-width: @{phone-max-width})";
