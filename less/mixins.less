@@ -1,11 +1,29 @@
 // Mixins Here
-@background-color: #2E8B57;
-@border-radius: 10px;
-@padding: 8px 30px 8px 30px;
-@color: white;
-@margin: 4px 2px;
+// @background-color: #2E8B57;
+// @border-radius: 10px;
+// @padding: 8px 30px 8px 30px;
+// @color: white;
+// @margin: 4px 2px;
 
 
-.btn-style (@background-color; @border-radius; @padding; @color) {
+.btn-style (@background-color; @height: 32px; @width: 90px; @border-radius; @padding; @color: white) {
+  background-color: @background-color;
+  color: @color;
+  width: @width;
+  height: @height;
+  border: 0px;
+  border-radius: 5px;
 
+  &:hover {
+    background-color: @waterloo;
+    color: black;
+  }
+}
+
+.mixin(){
+  padding: 10px;
+}
+
+.mixin2(){
+  padding: 30px 20px 30px 20px;
 }

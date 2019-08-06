@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -147,7 +147,6 @@ h5 {
 }
 h2 {
   font-size: 3.2rem;
-  margin-left: 10px;
 }
 h3 {
   font-size: 2.8rem;
@@ -163,71 +162,36 @@ p {
 }
 header {
   display: block;
-  /* text-align: center; */
+  text-align: center;
   width: 100%;
   margin-top: 14px;
   margin-bottom: 14px;
 }
-.Menu {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-
-.Menu a  {
-  /* display:flex;
-  flex-direction: row; */
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
-  color: black;
-  padding-right: 0.5em;
-  padding-left: 3em;
-  justify-content: space-between;
-  justify-content: center;
-
-/* a {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-  } */
-
-}
-
-
-
-
-@media (max-width:500px){
-  header .Menu{
-  display:inline-block;
-  padding: 5px 5px 5px;
-  }
-}
-
-
-@media (max-width:500px) {
-  .intro .main-header
-    width: auto;
-}
-
 header h1 {
- display: flex;
- justify-content: center;
- align-items: center;
-  font-size: 50px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  text-align: center;
- }
+  font-size: 3rem;
+  margin-bottom: 0.8rem;
 }
-
-
-h1 {
-  font-size: 50px;
+header nav {
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: row;
+}
+header nav .Menu {
+  display: flex;
+}
+header nav .Menu a {
+  padding: 0 20px;
+  text-decoration: none;
+  font-size: 10px;
+  color: black;
+}
+@media screen and (max-width: 479px) {
+  header nav .Menu a .Menu a {
+    flex-flow: nowrap;
+    padding: 0.5em;
+    color: black;
+    font-size: 5rem;
+  }
 }
 footer {
   color: #22283B;
@@ -239,38 +203,16 @@ footer {
   justify-content: center;
   align-items: center;
 }
-
-
-@media (max-width: 500px) {
-  .home .space-images img .sky .launch {
-    display: none;
-  }
-  .home .space-images .blast {
-    width: 95%;
-  }
-}
-@media ( max-width: 500px) {
-  .home .intro .header-img {
-    width:80%;
-    border-radius: 20px;
-  }
-  .home .intro img {
-    width:100%;
-  }
-
- .home .intro h2 {
-  padding: 5px 5px 5px 5px;
-  margin-left:0px;
-  text-align: left;
-  }
- .home .space-images .sky .launch {
-   display: none;
- }
+.home .intro h2 {
+  padding: 15px;
 }
 .home .intro p {
-  padding: 0 5px;
-  margin-top: 10px;
-  text-align: left;
+  padding: 0 15px;
+}
+@media screen and (max-width: 479px) {
+  .home .intro img {
+    width: 100%;
+  }
 }
 .home .space-images {
   display: flex;
@@ -283,6 +225,17 @@ footer {
   border-radius: 20px;
   height: 100%;
 }
+@media screen and (max-width: 479px) {
+  .home .space-images img {
+    width: 100%;
+  }
+  .home .space-images .sky {
+    display: none;
+  }
+  .home .space-images .launch {
+    display: none;
+  }
+}
 .home .visit-planets {
   padding: 15px;
 }
@@ -294,27 +247,11 @@ footer {
 }
 .home .walk {
   margin-top: 60px;
-  /* border-top: 1px solid #dee2e6; */
+  border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
   justify-content: center;
 }
-
-@media(max-width: 500px) {
-  .home .walk  {
-    display: flex;
-    flex-flow: column-reverse;
-    width: 100%;
-    align-items: center;
-    border-top:none;
-  }
-   .home .walk .walk-text {
-     display: flex;
-     flex-flow: column;
-   }
-  }
-}
-
 .home .walk .walk-text {
   width: 50%;
 }
@@ -324,26 +261,41 @@ footer {
 .home .walk .walk-text p {
   margin-bottom: 26px;
 }
+@media screen and (max-width: 479px) {
+  .home .walk .walk-text {
+    width: 100%;
+  }
+  .home .walk .walk-text .btn {
+    width: 100%;
+    padding: 18px;
+  }
+  .home .walk .walk-text .btn:hover {
+    padding: 18px;
+    border: 2px solid #22283A;
+  }
+}
+.home .walk .walk-text .btn:hover {
+  background-color: blue;
+}
 .home .walk .walk-img {
-  width: 65%;
+  width: 46%;
   margin-left: 4%;
 }
-
-@media (max-width:500px) {
-  .home .walk .walk-img {
-    width:100%;
-  }
-  .home .walk  h3 {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    flex-flow: nowrap;
-    justify-content: center;
-    align-items: center;
-  }
-}
 .home .walk .walk-img img {
-  width: 100%;
+  width: auto;
   height: auto;
   border-radius: 10px;
+  align-items: center;
+}
+@media screen and (max-width: 479px) {
+  .home .walk .walk-img .walk-img {
+    width: 100%;
+  }
+  .home .walk .walk-img .walk-img .walk-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+  }
 }

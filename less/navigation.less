@@ -9,10 +9,17 @@ header {
  margin-top: 14px;
  margin-bottom: 14px;
 
+ h1 {
+   font-size: 4rem;
+   margin-bottom: 0.8rem;
+   padding-bottom: 3%;
+ }
+
   nav {
    display: flex;
    justify-content: center;
    flex-direction: row;
+   background-color: @wild-sand;
 
    .Menu {
      display: flex;
@@ -20,10 +27,15 @@ header {
       a {
        padding: 0 20px;
        text-decoration: none;
+       font-size: 10px;
+       color: black;
 
         @media @phone {
          .Menu a {
            flex-flow: nowrap;
+           padding: 0.5em;
+           color: black;
+           font-size: 5rem;
           }
         }
       }
