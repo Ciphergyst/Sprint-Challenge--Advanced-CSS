@@ -33,14 +33,19 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. What is the difference between an adaptive website and a fully responsive website?
+A: An Adaptive website has been designed to adapt to certain viewports at specific pixels to accomadate devices like a tablet or smartphone. A fully responsive website is optimized to be viewed at almost any viewport, thus optimized for every device regardless of the specific width or height of the viewport.
 
 2. Describe what it means to be mobile first vs desktop first.
+A: Mobile first is the approach of designing a website from the bottom up. By putting more emphasis on optimizing mobile view which is no the most popular way to view websites it allows for greater functionality at the mobile level while also being able to include a desktop layout for additional viewport sizes.
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
+A: Having the font size a percentage relative to the viewport allows the rem units to scale based upon the viewport width instead of having a fixed pixel size. The font can scale along with the page for a better experience.
 
 4. How would you describe preprocessing to someone new to CSS?
+A: Processing is a tiny engine that translates additional features and shorthand styles into the longer format, thus saving time with large stylesheets and elements that share common properties.
 
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+A: By using variables and mixins it allows the developer the power to change numerous elements with one stroke instead of one by one. This efficiency significantly cuts down the time for production and makes edits or changes less painless in large and complex style sheets.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -56,13 +61,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+
 
 ### Preprocessor Set up
 
@@ -94,11 +99,11 @@ _You will know everything is working properly when you see the styles enabled fo
 
 ### Home Page - Desktop HTML & LESS
 
-* [ ] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
+* [X] Take 10 minutes to review the code that has already been provided for you. Take time to see how the home page was built.
 
-* [ ] Add a viewport meta tag to the head of your index.html page
+* [X] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [X] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
 
 * [ ] Navigation Styles: Use the `navigation.less` file for styling.
 
